@@ -30,7 +30,7 @@ namespace ParkyAPI.Controllers
             }
             return Ok(trailDto);
         }
-        [HttpGet("{trailId:int}", Name = "GetTrail")]
+        /*[HttpGet("{trailId:int}", Name = "GetTrail")]
         public IActionResult GetTrail(int trailId)
         {
             var trail = trailRepo.GetTrail(trailId);
@@ -39,7 +39,7 @@ namespace ParkyAPI.Controllers
             var trailDto = new TrailDto();
             trailDto = mapper.Map<TrailDto>(trail);
             return Ok(trailDto);
-        }
+        }*/
         [HttpPost]
         public IActionResult CreateTrail([FromBody] TrailCreateDto trailDto)
         {
